@@ -20,7 +20,7 @@ module.exports = function makeExchange(currency) {
             }
 
             if ((currency / coins[key]) > 0) {
-                currency = currency - countCoins * coins[key];
+                currency -= countCoins * coins[key];
             }
         }
     }
